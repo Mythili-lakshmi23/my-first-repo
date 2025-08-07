@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Recipes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍳 Daily Cooking Recipes</h1>
+
+    <div class="buttons">
+      <button onclick="showRecipe('breakfast')">Breakfast</button>
+      <button onclick="showRecipe('lunch')">Lunch</button>
+      <button onclick="showRecipe('dinner')">Dinner</button>
+    </div>
+
+    <div id="recipe-box">
+      <h2 id="recipe-title">Click a button to get a recipe</h2>
+      <p id="ingredients"></p>
+      <p id="steps"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
