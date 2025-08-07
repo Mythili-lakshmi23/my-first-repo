@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Profile</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Recipes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Welcome to My Profile!</h1>
-    <p>Hello, I am learning HTML.</p>
-    
-    <h2>About Me</h2>
-    <ul>
-        <li>Name: John Doe</li>
-        <li>Hobby: Coding</li>
-        <li>Location: India</li>
-    </ul>
+  <div class="container">
+    <h1>🍳 Daily Cooking Recipes</h1>
 
-    <h2>Contact</h2>
-    <p>Email: johndoe@example.com</p>
+    <div class="buttons">
+      <button onclick="showRecipe('breakfast')">Breakfast</button>
+      <button onclick="showRecipe('lunch')">Lunch</button>
+      <button onclick="showRecipe('dinner')">Dinner</button>
+    </div>
 
-    <h2>My Favorite Website</h2>
-    <a href="https://www.google.com" target="_blank">Visit Google</a>
+    <div id="recipe-box">
+      <h2 id="recipe-title">Click a button to get a recipe</h2>
+      <p id="ingredients"></p>
+      <p id="steps"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
